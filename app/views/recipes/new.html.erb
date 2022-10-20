@@ -1,0 +1,26 @@
+<h4> Добавление нового рецепта </h4>
+<%= form_for :recipe, url: recipes_path  do |f| %>
+    <p>
+      Название<br>
+      <%= f.text_field :title %>
+    </p>
+    <p>
+      Мука<br>
+      <%= f.text_field :flour %>
+    </p>
+    <p>
+      Солод<br>
+      <%= f.text_field :malt %>
+    </p>
+    <p>
+      Вода<br>
+      <%= f.text_field :water %>
+    </p>
+    <p>
+      Браун<br>
+      <%= f.text_field :brounextra %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
